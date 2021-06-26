@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 156vw;
+  border: 5px solid red;
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include response-to('device-medium') {
+    height: 55vw;
+  }
+
+  @include response-to('device-xlarge') {
+    width: 100%;
+    height: 800px;
+    background-position: top;
+  }
+
+  &__title {
+    padding: 0 15%;
+    text-align: center;
+
+    @include response-to('device-small') {
+      padding: 0 9%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+  }
+}
