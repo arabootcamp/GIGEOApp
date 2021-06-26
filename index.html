@@ -11,7 +11,9 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
   <!--Google Fonts-->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <!--My CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
   <!--JQuery 3.6.0-->
@@ -22,114 +24,123 @@
 <body>
 
   <!--Navbar-->
-  <nav>
-    <h1>GIGEO <sup>ART</sup></h1>
-    <i class="fas fa-search"></i>
-    <i class="fas fa-video"></i>
-    <i class="fas fa-plus"></i>
-    <i class="fas fa-bell"></i>
-    <i class="fas fa-bars"></i>
+  <nav class="navbar container">
+    <h1 class="navbar__title position-relative">GIGEO <span class="font-size-xsmall position-absolute">ART</span></h1>
+    <div class="navbar__menu ms-auto invisible py-2 py-sm-0 ps-4">
+      <i class="navbar__item fas fa-search fa-2x me-4"></i>
+      <i class="navbar__item  fas fa-video fa-2x me-4"></i>
+      <i class="navbar__item fas fa-plus fa-2x me-4"></i>
+      <i class="navbar__item far fa-bell fa-2x me-4"></i>
+    </div>
+    <button class="button button--bars">
+      <i class="fas fa-bars fa-2x "></i>
+    </button>
   </nav>
   <!--Fin Navbar-->
 
   <!--Header-->
-  <header>
-    <img src="assets/img/image-banner.png" alt="img banner">
+  <header class="header">
+    <img class="header__img" src="assets/img/image-banner.png" alt="img banner">
   </header>
   <!--Fin Header-->
 
   <!--Section Contact-->
-  <section class="section-contact">
-    <img class="section-contact" src="assets/img/profile-image.png" alt="img profile">
-    <h3 class="section-contact__title">Yuki Mukami</h3>
-    <span class="section-contact__text">30.000 seguidores</span>
-    <button>Mensaje</button>
-    <button>Seguir</button>
-  </section>
-  <!--Fin Section-->
-
-  <!--Section Videos-->
-  <section class="section-videos">
-    <h2>Videos Populares</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-12 row-cols-md-2 row-cols-lg-4">
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-1.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
+  <section class="section-contact border-bottom border-secondary">
+    <div class="section-contact container d-flex justify-content-center justify-content-md-between align-items-center">
+      <div class="group d-flex justify-content-between align-items-center">
+        <img class="section-contact__img" src="assets/img/profile-image.png" alt="img profile">
+        <div class="group ms-4">
+          <h3 class="section-contact__title my-0">Yuki Mukami</h3>
+          <span class="section-contact__text text-primary my-0">30.000 seguidores</span>
         </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-2.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-3.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-4.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-5.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-6.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-7.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
-        <div class="col">
-          <article class="article">
-            <img src="assets/img/image-8.png" alt=" img video">
-            <h3 class="article__title">
-              Después de la vela - Yuki Mukami
-            </h3>
-            <p class="article__p">16k vistas - 1 semana atrás</p>
-          </article>
-        </div>
+      </div>
+      <div class="group d-none d-md-block">
+        <button class="button button--sky-blue me-3">Mensaje</button>
+        <button class="button button--persimon">Seguir</button>
       </div>
     </div>
   </section>
   <!--Fin Section-->
 
+  <!--Section Videos-->
+  <section class="section-video container">
+    <h2 class="section-video__title py-4 text-center text-md-start">Videos populares</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-1.png" alt=" img video">
+          <h4 class="article__title text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-2.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-3.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-4.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-5.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-6.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-7.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+      <div class="col">
+        <article class="article mb-4">
+          <img class="article__img" src="assets/img/image-8.png" alt=" img video">
+          <h4 class="article__title  text-bold mt-2 mb-0">
+            Después de la vela - Yuki Mukami
+          </h4>
+          <p class="article__p text-primary">16k vistas - 1 semana atrás</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!--Fin Section-->
 
   <!--Bootstrap popper-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

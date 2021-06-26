@@ -6,8 +6,13 @@
 //vendors
 @import 'vendors/bootstrap/bootstrap';
 //base
+@import 'base/typography';
 //layout
+@import 'layout/header';
+@import 'layout/section-contact';
+@import 'layout/article';
 //components
+@import 'components/button';
 //pages
 //themes
 
