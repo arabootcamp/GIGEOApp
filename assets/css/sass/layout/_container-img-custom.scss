@@ -1,9 +1,0 @@
-.container-img-custom {
-  width: 150px;
-  height: 150px;
-
-  @include response-to('device-medium') {
-     width: 140px;
-     height: 140px;
-  }
-}
